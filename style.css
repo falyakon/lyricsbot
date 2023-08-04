@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'IM FELL DW Pica';
+  src: url('assets/IM_FELL_DW_Pica_Roman.woff2') format('woff2'),
+      url('assets/IM_FELL_DW_Pica_Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IM FELL DW Pica';
+  src: url('assets/IM_FELL_DW_Pica_Italic.woff2') format('woff2'),
+      url('assets/IM_FELL_DW_Pica_Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  font-family: 'IM FELL DW Pica', 'Times New Roman', Times, serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 95vh;
+  user-select:none;
+  background:#121212;
+}
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#playerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#playerContainer svg {
+  margin: 40px;
+  cursor: pointer;
+  position: relative;
+  fill: white;
+}
+#backBtn, #shuffleBtn, #infos {
+  opacity: 70%;
+}
+#bot {
+  z-index: 999;
+  margin: 0;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#lyricsContainer,
+#infoContainer,
+#generateBtn {
+  position: relative;
+}
+
+#lyricsContainer, #textContainer {
+  font-family: 'IM FELL DW Pica';
+  font-style: Italic;
+  font-size: 48px;
+  margin: 0 0 50px;
+}
+
+#textContainer {
+  color: #1ED760;
+}
+#credits {
+  color: white;
+}
+
+img {
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: opacity 0.5s ease;
+}
+#infoContainer {
+  font-family: 'IM FELL DW Pica';
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}

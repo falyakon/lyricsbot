@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>love lyrics bot</title>
+</head>
+<link rel='stylesheet' href='style.css'>
+<link rel='icon' type='image/x-icon' href='assets/icon.png'>
+<body>
+    
+    <div id='container'>
+        <div id='bot'>
+            <div id="textContainer">Click the play button to start,<br/>then use the player like Spotify's</div>
+            <div id='lyricsContainer' class='lyrics-transition'></div>
+        </div>
+    </div>
+    <div id='infoContainer'>
+        <img id="albumCover" src="">
+        <div id='infos'></div>
+        <img id="dano" src="images/dano.jpg">
+        <div id="credits"><strong>For my black kitten</strong><br/>By Dano</div>
+    </div>
+    <div id='playerContainer'>
+        <svg id='backBtn' width='24' height='27' viewBox='0 0 24 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M23.25 0.9375L5.25 11.6189V2.09375H0.75V25.2188H5.25V15.6936L23.25 26.375V0.9375Z'/>
+        </svg>
+        <svg id='startBtn' width='67' height='67' viewBox='0 0 67 67'>
+            <path d='m33.5,0C15,0,0,15,0,33.5s15,33.5,33.5,33.5,33.5-15,33.5-33.5S52,0,33.5,0Zm-8.38,46.06v-25.12l21.99,12.56-21.99,12.56Z'/>
+        </svg>
+        <svg id='shuffleBtn' width='23' height='27' viewBox='0 0 23 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M0.217201 26.0199L18.3576 15.021L18.439 24.6925L22.997 24.6541L22.7994 1.17388L18.2415 1.21224L18.3228 10.8837L-0.000136443 0.19164L0.217201 26.0199Z'/>
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+    <script type='text/javascript' src='lyrics.js'></script>
+    <script type='text/javascript' src='main.js'></script>
+</body>
+</html>
